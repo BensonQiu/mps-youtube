@@ -104,7 +104,6 @@ Or with `Homebrew <http://brew.sh>`_::
 
     brew install mplayer
 
-
 Additional Windows installation notes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -121,9 +120,7 @@ Alternatively to mplayer, use ``mpv.exe`` which can be downloaded from: http://m
 Run via Docker container
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Using `Docker <http://www.docker.com>`_::
-
-Run the container with
+Using `Docker <http://www.docker.com>`_ run with::
 
     sudo docker run -v /dev/snd:/dev/snd -it --rm --privileged --name mpsyt rothgar/mysyt
 
@@ -132,16 +129,16 @@ Additional Docker notes
 
 If you would like to locally build the container you can run the following steps
 
-Check out this repo
+Check out this repo::
 
     git clone https://github.com/np1/mps-youtube.git
 
-Enter the directory and run docker build
+Enter the directory and run docker build::
 
     cd mps-youtube
     sudo docker build -t mpsyt .
 
-Now run the container interactively with
+Now run the container interactively with::
 
     sudo docker run -v /dev/snd:/dev/snd -it --rm --privileged --name mpsyt mysyt
 
